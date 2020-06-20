@@ -39,8 +39,6 @@ void showList(){
     cout<<endl;
 }
 
-vector <int> stack_array;
-
 void remove_duplicate(){
     node* first = head;
     node* second = head->next;
