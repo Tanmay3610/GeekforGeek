@@ -1,7 +1,7 @@
 //Question Link: https://www.geeksforgeeks.org/nth-node-from-the-end-of-a-linked-list/
 
-/*This question can be done easily by finding the length of the linked list, but let's do it by anotgehr way around using two pointer concept.
-Complexity of this is O(n)*/
+/*This question can be done easily by finding the length of the linked list, but let's do it by anotgehr way around using two pointer 
+concept. Complexity of this is O(n)*/
 
 #include<bits/stdc++.h>
 using namespace std;
