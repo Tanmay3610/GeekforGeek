@@ -38,15 +38,18 @@ void createNode(int data){
 void findHead(int length){
     node* second = head;
     node* first = head;
+    
+    /* Maintaining difference of (length - 1) between two pointers */
     while(length != 0){
         second = second->next;
         length = length - 1;
     }
-            
+    
+    /* Retreving loop head by checking second->next == first condition */
     while(true){
         if(second->next == first){
-        cout<<first->data;
-        return;
+          cout<<first->data;
+          return;
         }
         second = second->next;
         first = first->next;
@@ -62,6 +65,9 @@ void loopHead(){
     node* slow = head;
     node* fast = head;
     node* tmp = NULL;
+    
+  
+    /* Checking if the loop is present or not */
     while(fast != NULL){
         fast = fast->next;
         if(fast->next == NULL){
@@ -76,13 +82,16 @@ void loopHead(){
             break;
         }        
     }
+  
+    /* Finding Length of the loop */
     itr = tmp;
     int length = 1;
     while(itr->next != tmp){
         itr = itr->next;
         length++;
     }
-    cout<<length<<endl;
+    
+    /*finding loop head*/
     findHead(length - 1);
 }
 
