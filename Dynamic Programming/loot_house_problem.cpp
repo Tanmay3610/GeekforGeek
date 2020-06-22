@@ -48,7 +48,6 @@ int main(){
 #include<bits/stdc++.h>
 using namespace std;
 
-int staticSum = 0;
 int solve(int *arr, int n, int sum, int *dp){
     dp[0] = arr[0];
     dp[1] = max(arr[0], arr[1]);
@@ -62,7 +61,6 @@ int main(){
     int t;
     cin>>t;
     while(t--){
-        staticSum = 0;
         int n;
         cin>>n;
         int arr[n];
