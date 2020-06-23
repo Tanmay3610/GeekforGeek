@@ -1,5 +1,11 @@
 //Question Link : https://www.geeksforgeeks.org/binomial-coefficient-dp-9/
 
+/*
+
+    Concept Used : C(n,r) = C(n - 1, r - 1) + C(n - 1, r)
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 #define mod 1000000007
