@@ -19,7 +19,7 @@ int C(int n, int r){
         return 0;
     if(dp[n][r] != 0)
         return dp[n][r];
-    dp[n][n - r] = dp[n][r] = (C(n - 1, r - 1)%mod + C(n - 1, r)%mod)%mod;
+    dp[n][r] = (C(n - 1, r - 1)%mod + C(n - 1, r)%mod)%mod;
     return dp[n][r];
 }
 
